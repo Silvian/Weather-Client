@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/target/generated-sources/xjc" isTestSource="false" generated="true" />
+      <excludeFolder url="file://$MODULE_DIR$/target/WeatherClient" />
+      <excludeFolder url="file://$MODULE_DIR$/target/WeatherService" />
+      <excludeFolder url="file://$MODULE_DIR$/target/apache-tomcat-maven-plugin" />
+      <excludeFolder url="file://$MODULE_DIR$/target/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/target/maven-archiver" />
+      <excludeFolder url="file://$MODULE_DIR$/target/maven-status" />
+      <excludeFolder url="file://$MODULE_DIR$/target/temp16222894952460656171418577191663157000" />
+      <excludeFolder url="file://$MODULE_DIR$/target/temp30001513193855316011418575847365211000" />
+      <excludeFolder url="file://$MODULE_DIR$/target/temp31294034842486246441418574817638391000" />
+      <excludeFolder url="file://$MODULE_DIR$/target/temp33266211329601993321418576570914292000" />
+      <excludeFolder url="file://$MODULE_DIR$/target/temp36441394042583499841418576419542454000" />
+      <excludeFolder url="file://$MODULE_DIR$/target/temp3736573425112740561418575422287084000" />
+      <excludeFolder url="file://$MODULE_DIR$/target/temp45128515054109713451418574509721896000" />
+      <excludeFolder url="file://$MODULE_DIR$/target/temp49731887802145346061418577365357252000" />
+      <excludeFolder url="file://$MODULE_DIR$/target/temp57175255907931529861418577021626682000" />
+      <excludeFolder url="file://$MODULE_DIR$/target/temp64483242789046727361418576274232094000" />
+      <excludeFolder url="file://$MODULE_DIR$/target/temp78602563623501439361418577477357885000" />
+      <excludeFolder url="file://$MODULE_DIR$/target/temp81661355830430999131418576291214501000" />
+      <excludeFolder url="file://$MODULE_DIR$/target/temp81763505374658295981418576818401720000" />
+      <excludeFolder url="file://$MODULE_DIR$/target/tomcat" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.springframework:gs-consuming-web-service:0.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-core:4.0.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-web:4.0.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.0.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.0.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:4.0.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:4.0.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.0.8.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet:jstl:1.2" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:1.1.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:1.1.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:1.1.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-logging:1.1.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.7.7" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.7" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:jul-to-slf4j:1.7.7" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:log4j-over-slf4j:1.7.7" level="project" />
+    <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.1.2" level="project" />
+    <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.1.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.yaml:snakeyaml:1.13" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.ws:spring-ws-core:2.2.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.ws:spring-xml:2.2.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-oxm:4.0.8.RELEASE" level="project" />
+  </component>
+</module>
