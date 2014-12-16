@@ -6,7 +6,6 @@ package hello;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.context.ApplicationContext;
-
 import hello.wsdl.GetCityForecastByZIPResponse;
 
 public class Application {

@@ -41,7 +41,7 @@
 		<hr />
 
 		<h5>Enter a US city zip code:</h5>
-		<form id="zip-form" name="zip-form" action="get-weather-data" method="get">
+		<form method="GET" id="zip-form" name="zip-form" action="get-weather-data" enctype="multipart/form-data">
 		  <div class="row">
 			<div class="large-6 medium-6 columns">
 			  <input id="zip-code" name="zip-code" value="" type="text" placeholder="Enter city zip code" />
