@@ -30,8 +30,8 @@
 		<table id="weather-results">
 		  <thead>
 			<tr>
-			  <th width="150">Date</th>
-			  <th width="250">Description</th>
+			  <th width="200">Date</th>
+			  <th width="350">Description</th>
 			  <th width="150">Temperature Lowest</th>
 			  <th width="150">Temperature Highest</th>
 			</tr>
