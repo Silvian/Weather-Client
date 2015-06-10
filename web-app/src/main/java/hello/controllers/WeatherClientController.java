@@ -22,8 +22,7 @@ public class WeatherClientController {
 
 
 
-    @RequestMapping(value = "/weather",
-                    method = RequestMethod.GET)
+    @RequestMapping(value = "/weather")
     public String displayWeather(ModelMap modelMap) {
 
         return "weather";

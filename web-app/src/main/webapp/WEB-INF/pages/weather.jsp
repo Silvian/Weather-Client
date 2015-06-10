@@ -9,8 +9,25 @@
   </head>
   <body>
 
+  	<nav class="top-bar" data-topbar role="navigation">
+	  <section class="top-bar-section">
+		<!-- Left Nav Section -->
+		<ul class="left">
+		  <li class="active">
+			<a href="weather">Weather Client</a>
+		  </li>
+		</ul>
+		<ul class="left">
+		  <li>
+			<a href="contacts">Contacts</a>
+		  </li>
+		</ul>
+	  </section>
+	</nav>
+
     <div class="row">
 	 <div class="large-12 columns">
+	   </br>
 	   <h1>Welcome to Weather Client</h1>
 	   </br>
 	 </div>
@@ -58,11 +75,11 @@
 
     <hr />
 
-	  <h5>Enter a US city zip code:</h5>
+	  <h5>US city zip code:</h5>
 	  <form method="GET" id="zip-form" name="zip-form" action="get-weather-data" enctype="multipart/form-data">
 		<div class="row">
 		  <div class="large-6 medium-6 columns">
-			<input id="zip-code" name="zip-code" value="" type="text" placeholder="Enter city zip code" />
+			<input id="zip-code" name="zip-code" value="" type="text" placeholder="Enter a US city zip code" required pattern="[0-9]+"/>
 		  </div>
 		  <div class="large-6 medium-6 columns">
 			<input type="submit" value="Get Weather Data" class="small button"/><br/>
