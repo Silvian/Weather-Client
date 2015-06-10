@@ -2,6 +2,7 @@ package hello.services;
 
 import hello.models.ResponseDataModel;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
@@ -13,10 +14,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class EmailService {
 
-    private String recipientAddress = "devcon.demo9@gmail.com";
-
     @Autowired
     JavaMailSender mailSender;
+
+    @Value("${email.service.recipient.address}")
+    private String recipientAddress;
 
     private SimpleMailMessage emailSetup(String fromEmail, String subject, String message) {
 

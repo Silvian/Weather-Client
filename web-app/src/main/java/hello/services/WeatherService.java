@@ -6,6 +6,7 @@ import hello.wsdl.Forecast;
 import hello.wsdl.ForecastReturn;
 import hello.wsdl.GetCityForecastByZIPResponse;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.text.SimpleDateFormat;
@@ -21,6 +22,9 @@ public class WeatherService {
 
     @Autowired
     WeatherClient weatherClient;
+
+    @Value("${weather.service.date.format}")
+    String dateFormat;
 
 
     private ForecastReturn processWeather(String zipCode) {
@@ -49,7 +53,7 @@ public class WeatherService {
         ForecastReturn forecastReturn = processWeather(zipCode);
         if(forecastReturn.isSuccess()) {
             List<WeatherDataModel> weatherDataModelList = new ArrayList<WeatherDataModel>();
-            SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+            SimpleDateFormat formatter = new SimpleDateFormat(dateFormat);
             for(Forecast forecast: forecastReturn.getForecastResult().getForecast()){
                 weatherDataModelList.add(new WeatherDataModel(formatter.format(forecast.getDate().toGregorianCalendar().getTime()).toString(),
                                                                 forecast.getDesciption(),forecast.getTemperatures().getMorningLow(),

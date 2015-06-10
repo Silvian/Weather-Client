@@ -5,6 +5,7 @@ package hello;
  */
 
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.ws.client.core.support.WebServiceGatewaySupport;
 import org.springframework.ws.soap.client.core.SoapActionCallback;
 
@@ -12,6 +13,9 @@ import hello.wsdl.GetCityForecastByZIP;
 import hello.wsdl.GetCityForecastByZIPResponse;
 
 public class WeatherClient extends WebServiceGatewaySupport {
+
+    @Value("${weather.client.request.url}")
+    String requestUrl;
 
     public GetCityForecastByZIPResponse getCityForecastByZip(String zipCode) {
         GetCityForecastByZIP request = new GetCityForecastByZIP();
@@ -23,7 +27,7 @@ public class WeatherClient extends WebServiceGatewaySupport {
         GetCityForecastByZIPResponse response = (GetCityForecastByZIPResponse) getWebServiceTemplate().marshalSendAndReceive(
                 request,
                 new SoapActionCallback(
-                        "http://ws.cdyne.com/WeatherWS/GetCityForecastByZIP"));
+                        requestUrl));
 
         return response;
     }
