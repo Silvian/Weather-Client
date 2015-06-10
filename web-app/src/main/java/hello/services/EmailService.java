@@ -38,7 +38,7 @@ public class EmailService {
                 SimpleMailMessage email = emailSetup(fromEmail, subject, message);
                 mailSender.send(email);
 
-                return new ResponseDataModel(true,"Message sent successfully!");
+                return new ResponseDataModel(true, "Message sent successfully!");
 
             } catch(Exception e) {
                 e.printStackTrace();
@@ -46,7 +46,7 @@ public class EmailService {
             }
         }
 
-        return new ResponseDataModel(false,"Failed to send message!");
+        return new ResponseDataModel(false, "All mandatory fields must be filled in!");
     }
 
 }
